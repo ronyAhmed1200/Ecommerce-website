@@ -69,45 +69,6 @@ font-family: 'Roboto Mono', monospace;
         transform: scale(0.97);
     }
     /* ==========================
-        header styles
-=============================*/
-    
-    .head-top {
-        background: #fef7f6;
-        color: #777;
-        font-size: 11px;
-        margin: 0 auto;
-        text-transform: uppercase;
-    }
-    
-    .head-top .container-fluid {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .head-top span:nth-child(1) {
-        margin-right: 5px;
-    }
-    
-    .head-top span:nth-child(2) {
-        margin: 0 10px;
-        color: #777;
-    }
-    
-    .head-top-right {
-        margin-top: 10px;
-        align-items: center;
-    }
-    
-    .head-top-right li {
-        display: inline-block;
-    }
-    
-    .head-top-right a {
-        color: #777;
-    }
-    /* ==========================
          navbar styles
 =============================*/
     
@@ -150,7 +111,7 @@ font-family: 'Roboto Mono', monospace;
     .dropdown-menu {
         animation-name: athover;
         animation-duration: 1s;
-        animation-iteration-count: finite;
+        animation-iteration-count: 1;
     }
     
     .dropdown:hover {
@@ -322,8 +283,8 @@ font-family: 'Roboto Mono', monospace;
     .product-1:hover .product-share {
         display: block;
         position: absolute;
-        left: 30%;
-        bottom: 35%;
+        left: 25%;
+        bottom: 30%;
     }
     /* ==========================
         showcase 2 styles
@@ -373,7 +334,7 @@ font-family: 'Roboto Mono', monospace;
     .feature-2 .product-1:hover .product-share {
         display: block;
         position: absolute;
-        left: 20%;
+        left: 15%;
         bottom: 35%;
     }
     /* ==========================
@@ -439,6 +400,45 @@ font-family: 'Roboto Mono', monospace;
     .follow img {
         width: 95%;
         height: auto;
+    }
+    /* ==========================
+        contact section styles
+=============================*/
+    
+    .contact {
+        background: #fef7f6;
+        color: #777;
+        font-size: 11px;
+        margin: 0 auto;
+        text-transform: uppercase;
+    }
+    
+    .contact .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contact span:nth-child(1) {
+        margin-right: 5px;
+    }
+    
+    .contact span:nth-child(2) {
+        margin: 0 10px;
+        color: #777;
+    }
+    
+    .contact-right {
+        margin-top: 10px;
+        align-items: center;
+    }
+    
+    .contact-right li {
+        display: inline-block;
+    }
+    
+    .contact-right a {
+        color: #777;
     }
     /* ==========================
        footer section
@@ -561,8 +561,12 @@ font-family: 'Roboto Mono', monospace;
         .product-1:hover .product-share {
             display: block;
             position: absolute;
-            left: 15%;
-            bottom: 25%;
+            left: 11%;
+            bottom: 35%;
+        }
+        .feature-2 .product-1:hover .product-share {
+            left: 25%;
+            bottom: 30%;
         }
         .journal .col-lg-4 {
             margin: 20px auto;
@@ -570,7 +574,7 @@ font-family: 'Roboto Mono', monospace;
     }
     
     @media (max-width: 750px) {
-        .head-top {
+        .contact {
             display: none;
         }
         .showcase-1 {
@@ -626,8 +630,8 @@ font-family: 'Roboto Mono', monospace;
         .product-1:hover .product-share {
             display: block;
             position: absolute;
-            left: 27%;
-            bottom: 15%;
+            left: 30%;
+            bottom: 25%;
         }
         /* for navbar section */
         .navbar {
@@ -688,5 +692,18 @@ font-family: 'Roboto Mono', monospace;
         }
         footer .container-fluid {
             display: none;
+        }
+    }
+    
+    @media(max-width: 400px) {
+        .product-1:hover .product-share {
+            display: block;
+            position: absolute;
+            left: 15%;
+            bottom: 35%;
+        }
+        .feature-2 .product-1:hover .product-share {
+            left: 10%;
+            bottom: 40%;
         }
     }

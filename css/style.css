@@ -226,8 +226,8 @@ font-family: 'Roboto Mono', monospace;
         width: 90%;
     }
 
-    .product-1:hover{
-        scale: 1.1;
+    .product-1:hover {
+        transform: scale(1,1);
     }
     
     .product img {
